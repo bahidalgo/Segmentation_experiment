@@ -57,7 +57,7 @@ def predict_online(images: list, host: str = "127.0.0.1", port: int = 5001):
         elapsed = time.time() - t0
         resp.raise_for_status()
         results = resp.json()
-        print(f"[online] ✅ response in {elapsed:.2f}s")
+        print(f"[online]  response in {elapsed:.2f}s")
         if isinstance(results, dict) and "predictions" in results:
             pretty(results["predictions"])
         else:
@@ -90,7 +90,7 @@ def predict_batch(images: list, model_uri: str):
     results = model.predict(df)
     elapsed = time.time() - t0
 
-    print(f"[batch] ✅ done in {elapsed:.2f}s")
+    print(f"[batch] done in {elapsed:.2f}s")
     pretty(results)
 
     # Save results to JSON
