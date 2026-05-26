@@ -1,0 +1,42 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# YOLOv8 / Ultralytics outputs (grandes, van en MLflow)
+runs/
+datasets/
+*.pt
+*.onnx
+*.torchscript
+
+# Predicciones locales
+predictions/
+test_images/
+batch_results.json
+
+# MLflow local
+mlruns/
+mlartifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
